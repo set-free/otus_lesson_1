@@ -1,5 +1,5 @@
 # Set min. cmake version
-cmake_minimum_required (VERSION 3.13) 
+cmake_minimum_required (VERSION 3.12.4) 
 
 # name of project 
 project (Lesson_1) 
