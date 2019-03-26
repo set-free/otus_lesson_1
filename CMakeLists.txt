@@ -15,5 +15,5 @@ set_target_properties(PROPERTIES
 # Add file to compile (Bin source)
 add_executable(Lesson_1 main.cpp)
 
-# Add dir with "spdlog/spdlog.h"
+# Add dir with "spdlog/spdlog.h" (Example for git clone spdlog)
 include_directories(spdlog/include)
