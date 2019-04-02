@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=cmake
+CMAKE_PROJECT_NAME:STATIC=helloworld
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.0.666
@@ -256,6 +256,12 @@ cmake_BINARY_DIR:STATIC=/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1
 
 //Value Computed by CMake
 cmake_SOURCE_DIR:STATIC=/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1
+
+//Value Computed by CMake
+helloworld_BINARY_DIR:STATIC=/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build
+
+//Value Computed by CMake
+helloworld_SOURCE_DIR:STATIC=/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1
 
 
 ########################
