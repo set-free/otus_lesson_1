@@ -1,0 +1,12 @@
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/package_source.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/test_version.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/install/local.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/package.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/test.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/helloworld.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/edit_cache.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/rebuild_cache.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/install/strip.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/helloworld_cli.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/list_install_components.dir
+/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/install.dir

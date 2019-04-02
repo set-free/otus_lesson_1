@@ -1,0 +1,9 @@
+Architecture: 
+Description: cmake built using CMake
+Maintainer: s.i.v.892@gmail.com
+Package: cmake
+Priority: optional
+Section: devel
+Version: 0.0.666
+Installed-Size: 945
+

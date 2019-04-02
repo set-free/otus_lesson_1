@@ -1,14 +1,11 @@
-#include <iostream>
+#include "lib.h"
 #include "spdlog/spdlog.h"
 
 using namespace std;
 
 int main()
 {
-//  spdlog::info("Hello world");
-// cout << "Hello World" << endl;
-  auto logger = spdlog::stdout_logger_mt("console");
-  logger->info("version {} was started", version());
-
-  return 0; 
+  spdlog::info("build {}", version());
+  spdlog::info("Hello world");
+  return 0;
 }
