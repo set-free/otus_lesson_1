@@ -60,6 +60,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_version.dir/DependInfo.cmake"
+  "CMakeFiles/helloworld_lib.dir/DependInfo.cmake"
   "CMakeFiles/helloworld.dir/DependInfo.cmake"
-  "CMakeFiles/helloworld_cli.dir/DependInfo.cmake"
   )

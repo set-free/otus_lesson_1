@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -100,6 +89,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -203,6 +203,19 @@ test_version/fast:
 .PHONY : test_version/fast
 
 #=============================================================================
+# Target rules for targets named helloworld_lib
+
+# Build rule for target.
+helloworld_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 helloworld_lib
+.PHONY : helloworld_lib
+
+# fast build rule for target.
+helloworld_lib/fast:
+	$(MAKE) -f CMakeFiles/helloworld_lib.dir/build.make CMakeFiles/helloworld_lib.dir/build
+.PHONY : helloworld_lib/fast
+
+#=============================================================================
 # Target rules for targets named helloworld
 
 # Build rule for target.
@@ -215,26 +228,13 @@ helloworld/fast:
 	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
 .PHONY : helloworld/fast
 
-#=============================================================================
-# Target rules for targets named helloworld_cli
-
-# Build rule for target.
-helloworld_cli: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 helloworld_cli
-.PHONY : helloworld_cli
-
-# fast build rule for target.
-helloworld_cli/fast:
-	$(MAKE) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/build
-.PHONY : helloworld_cli/fast
-
 lib.o: lib.cpp.o
 
 .PHONY : lib.o
 
 # target to build an object file
 lib.cpp.o:
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.o
+	$(MAKE) -f CMakeFiles/helloworld_lib.dir/build.make CMakeFiles/helloworld_lib.dir/lib.cpp.o
 .PHONY : lib.cpp.o
 
 lib.i: lib.cpp.i
@@ -243,7 +243,7 @@ lib.i: lib.cpp.i
 
 # target to preprocess a source file
 lib.cpp.i:
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.i
+	$(MAKE) -f CMakeFiles/helloworld_lib.dir/build.make CMakeFiles/helloworld_lib.dir/lib.cpp.i
 .PHONY : lib.cpp.i
 
 lib.s: lib.cpp.s
@@ -252,7 +252,7 @@ lib.s: lib.cpp.s
 
 # target to generate assembly for a file
 lib.cpp.s:
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.s
+	$(MAKE) -f CMakeFiles/helloworld_lib.dir/build.make CMakeFiles/helloworld_lib.dir/lib.cpp.s
 .PHONY : lib.cpp.s
 
 main.o: main.cpp.o
@@ -261,7 +261,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -270,7 +270,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -279,7 +279,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 test_version.o: test_version.cpp.o
@@ -315,16 +315,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... package_source"
 	@echo "... test_version"
 	@echo "... install/local"
 	@echo "... package"
+	@echo "... helloworld_lib"
 	@echo "... test"
 	@echo "... helloworld"
+	@echo "... package_source"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install/strip"
-	@echo "... helloworld_cli"
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... lib.o"

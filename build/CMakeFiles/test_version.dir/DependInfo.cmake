@@ -19,7 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/helloworld.dir/DependInfo.cmake"
+  "/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles/helloworld_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

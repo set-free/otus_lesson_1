@@ -1,2 +1,1 @@
-/usr/bin/ar qc libhelloworld.a  CMakeFiles/helloworld.dir/lib.cpp.o
-/usr/bin/ranlib libhelloworld.a
+/usr/bin/c++     CMakeFiles/helloworld.dir/main.cpp.o  -o helloworld libhelloworld_lib.a -lpthread 

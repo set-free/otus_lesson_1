@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/test_version.dir/test_version.cpp.o  -o test_version /usr/lib64/libboost_unit_test_framework.so libhelloworld.a 
+/usr/bin/c++     CMakeFiles/test_version.dir/test_version.cpp.o  -o test_version /usr/lib64/libboost_unit_test_framework.so libhelloworld_lib.a 

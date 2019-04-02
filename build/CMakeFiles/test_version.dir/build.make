@@ -80,7 +80,7 @@ test_version_EXTERNAL_OBJECTS =
 test_version: CMakeFiles/test_version.dir/test_version.cpp.o
 test_version: CMakeFiles/test_version.dir/build.make
 test_version: /usr/lib64/libboost_unit_test_framework.so
-test_version: libhelloworld.a
+test_version: libhelloworld_lib.a
 test_version: CMakeFiles/test_version.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isavel/Nextcloud/Coding/С++/Otus/Month_1/Lesson_1/otus_lesson_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_version"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_version.dir/link.txt --verbose=$(VERBOSE)
