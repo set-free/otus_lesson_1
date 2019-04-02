@@ -15,9 +15,9 @@ configure_file(version.h.in ${PROJECT_SOURCE_DIR}/version.h)
 include_directories(spdlog/include)
 
 # Add file to compile (Bin source)
-add_executable(helloworld_cli main.cpp)
+add_executable(helloworld main.cpp)
 
-add_library(helloworld lib.cpp)
+add_library(helloworld_lib lib.cpp)
 
 add_executable(test_version test_version.cpp)
 
@@ -33,17 +33,17 @@ set_target_properties(test_version PROPERTIES
     INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 )
 
-target_link_libraries(helloworld_cli
-    helloworld
+target_link_libraries(helloworld
+    helloworld_lib
     Threads::Threads
 )
 
 target_link_libraries(test_version
     ${Boost_LIBRARIES}
-    helloworld
+    helloworld_lib
 )
 
-install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
+install(TARGETS helloworld RUNTIME DESTINATION bin)
 
 ###################################### Need read manuals ######################
 set(CPACK_PACKAGE_CONTACT s.i.v.892@gmail.com)
