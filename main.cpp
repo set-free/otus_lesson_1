@@ -6,6 +6,6 @@ using namespace std;
 int main()
 {
   spdlog::info("build {}", version());
-  spdlog::info("Hello world");
+  spdlog::info("Hello, World!");
   return 0;
 }
